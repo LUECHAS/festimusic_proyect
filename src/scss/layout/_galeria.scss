@@ -1,13 +1,15 @@
+/* Importación de variables y mixins */
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
-
+/* Estilos para la galería */
 .galeria {
     padding: 5rem 0;
     h3 {
         text-align: center;
     }
 }
-
+/* Estilos para las imágenes de la galería, utilizando mixins para 
+diferentes tamaños de pantalla */
 .galeria-imagenes {
     @include m.resetear-lista;
     @include m.grid(2, 2rem);
@@ -21,7 +23,7 @@
         @include m.grid(6, 2rem);
     }
 }
-
+/* Estilos para el overlay */
 .overlay {
     position: fixed;
     top: 0;
@@ -42,7 +44,7 @@
         max-width: 80rem;
     }
 }
-
+/* Estilos para el botón de cerrar */
 .btn-cerrar {
     width: 4rem;
     height: 4rem;
