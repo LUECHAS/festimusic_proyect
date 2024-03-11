@@ -1,6 +1,6 @@
 /* Importación de variables y mixins */
-@use 'base/variables' as v;
-@use 'base/mixins' as m;
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
 /* Estilos para la galería */
 .galeria {
     padding: 5rem 0;
